@@ -30,3 +30,12 @@ const mapResult = sampleData.map(item => item * 2 - 3);
 const sum = [12].reduce((a, b) => a * b);
 
 console.log('sum is ' + sum);
+
+
+const finalResult = sampleData
+    .filter(item => item >= 50)
+    .filter(item => item % 2 == 0)
+    .map(item => item * 2 - 3)
+    .reduce((a, b) => a + b, 0);
+
+
